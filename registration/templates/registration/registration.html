@@ -1,0 +1,64 @@
+{% extends "registration/base.html" %}
+{% block content %}
+<div class="container">
+    <h4 class="page-title">New Registration</h4>
+    <form class="row g-3">
+        <div class="col-md-6">
+          <label for="firstname" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="firstname" placeholder="John">
+        </div>
+        <div class="col-md-6">
+          <label for="lastname" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="lastname" placeholder="Doe">
+        </div>
+        <div class="col-md-3">
+          <label for="age" class="form-label">Age</label>
+          <input type="number" class="form-control" id="age" placeholder="">
+        </div>
+        <div class="col-md-3">
+          <label for="age" class="form-label">DOB</label>
+          <div class="input-group date" id="datepicker">
+            <input type="text" class="form-control" id="dob">
+            <span class="input-group-append">
+                <span class="input-group-text bg-white d-block">
+                    <i class="fa fa-calendar"></i>
+                </span>
+            </span>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="gender" class="form-label">Gender</label>
+          <select class="form-select" aria-label=".form-select-lg" id="status">
+            <option selected></option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Transgender">Transgender</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label for="status" class="form-label">Status</label>
+          <select class="form-select" aria-label=".form-select-lg" id="status">
+            <option selected></option>
+            <option value="Single">Single</option>
+            <option value="Married">Married</option>
+          </select>
+        </div>
+        <div class="col-6">
+          <label for="inputAddress" class="form-label">Address Line-1</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Line-1">
+        </div>
+        <div class="col-6">
+          <label for="inputAddress2" class="form-label">Address Line-2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Line-2">
+        </div>
+        <div class="col-md-6">
+          <label for="inputZip" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+      </form>
+     
+</div>
+{% endblock %}
